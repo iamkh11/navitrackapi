@@ -4,6 +4,7 @@ package com.cubeit.navitrackapi.RestControllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/api/cubeIT/NaviTrack/rest/missions")
 @Api(tags ="MissionRestController")
+@CrossOrigin("*")
 public class MissionRestController {
     @Autowired
     private MissionRepository missionRepository;
